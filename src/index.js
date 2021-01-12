@@ -18,12 +18,6 @@ function colorChanger(element) {
     element.style.color = "red"
 }
 
-  fetch(imgUrl)
-  .then(response => response.json())
-  .then(result => {
-    dogImages(result.message)
-  })
-
   function dogImages(dogs){
     console.log(dogs)
     dogs.forEach(dog => {
